@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exploring Events</title>
+  </head>
+
+  <body>
+    <h1 onclick="alert('Jawadul Alam')">Exploring Events</h1>
+    <p>
+      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Deleniti doloremque atque, in ut laudantium modi quia
+      amet adipisci earum, eos magnam ea eum. Facere aut molestiae fugit dicta
+      quisquam nesciunt!
+    </p>
+    <p>Facilis tenetur id odio vel.</p>
+    <p>Fuga ea adipisci tenetur. Nulla?</p>
+    <button>Click Me</button>
+    <button id="second">Click me-1</button><button>Click me-2</button
+    ><button id="lastPerson">Click me-3</button>
+
+    <script>
+      document
+        .getElementById("lastPerson")
+        .addEventListener("click", function () {
+          document.body.style.color = "tomato";
+        });
+      // function handleClick() {
+      //     document.body.style.backgroundColor = 'tomato';
+      // }
+      // // const secondButton = document.getElementById('second');
+      // // // secondButton.onclick = function(){
+      // // //     console.log('Second person clicked');
+      // // secondButton.onclick = handleClick;
+      // const secondButton = document.getElementById('second');
+      // secondButton.addEventListener('click', handleClick)
+    </script>
+  </body>
+</html>
